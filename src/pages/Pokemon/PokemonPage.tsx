@@ -24,6 +24,11 @@ const CardContainer = styled.div`
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 15px;
   padding: 1% 1%;
+
+  @media screen and (min-width: 320px) and (max-width: 420px) {
+    width: 90%;
+    height: 540px;
+  }
 `;
 
 const DetailBox = styled.div`
@@ -31,6 +36,7 @@ const DetailBox = styled.div`
   width: 100%;
   /* border: 1px solid black; */
   display: flex;
+  flex-direction: column;
 `;
 
 const PokemonImage = styled.img`
@@ -42,6 +48,11 @@ const PokemonImage = styled.img`
   margin-top: 25px;
   margin-left: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  @media screen and (min-width: 320px) and (max-width: 420px) {
+    width: 50%;
+    height: 70%;
+  }
 `;
 
 const InfoBox = styled.div`
@@ -57,6 +68,11 @@ const InfoBox = styled.div`
   > span {
     font-family: Roboto-Black;
   }
+
+  @media screen and (min-width: 320px) and (max-width: 420px) {
+    margin-top: 15px;
+    margin-left: 25px;
+  }
 `;
 
 const StatsBox = styled.div`
@@ -65,6 +81,10 @@ const StatsBox = styled.div`
   /* border: 1px solid black; */
   margin-top: 25px;
 
+  @media screen and (min-width: 320px) and (max-width: 420px) {
+    margin-top: 75px;
+    margin-left: 0px;
+  }
 `;
 
 const Status = styled.div`
