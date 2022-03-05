@@ -36,7 +36,12 @@ const DetailBox = styled.div`
   width: 100%;
   /* border: 1px solid black; */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+
+  @media screen and (min-width: 320px) and (max-width: 420px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const PokemonImage = styled.img`
